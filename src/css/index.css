@@ -13,6 +13,8 @@ body {
 .wrap {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -35,4 +37,57 @@ header span {
 header span.active {
     border-bottom: 1px solid blue;
     color: blue;
+}
+
+section {
+    width: 100%;
+    flex: 1;
+}
+
+section ul li {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+section ul li .top {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px dashed salmon;
+    background: salmon;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+section ul li .bottom {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+section ul li .bottom p {
+    font-size: 11px;
+    line-height: 20px;
+}
+
+section ul li .bottom p:nth-child(1) {
+    color: green;
+}
+
+section ul li .bottom p:nth-child(2) {
+    color: #ccc;
+}
+
+b {
+    font-size: 50px;
 }
